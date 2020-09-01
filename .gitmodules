@@ -1,0 +1,3 @@
+[submodule "assets/css/cirrus-ci"]
+	path = assets/css/cirrus-ci
+	url = https://github.com/Spiderpig86/Cirrus
