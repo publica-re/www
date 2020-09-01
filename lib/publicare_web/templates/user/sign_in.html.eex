@@ -1,0 +1,47 @@
+
+<h4>publica.re</h4>
+<h6 class="font-alt">the content authoring platform for scientists.</h6>
+
+<div class="divider"></div>
+
+<div class="form-section">
+    <label>Email</label>
+    <div class="input-control">
+        <input class="input-contains-icon" id="email" name="email" placeholder="Email" type="text" value="">
+        <span class="icon">
+            <i class="far fa-wrapper fa-envelope-open small"></i>
+        </span>
+    </div>
+</div>
+
+<div class="form-section">
+    <label>Password</label>
+    <div class="input-control">
+        <input class="input-contains-icon" id="password" name="password" placeholder="Password" type="password" value="">
+        <span class="icon">
+            <i class="fas fa-wrapper fa-key small"></i>
+        </span>
+    </div>
+</div>
+
+<div class="form-ext-control form-ext-checkbox">
+    <input id="check1" class="form-ext-input" type="checkbox">
+    <label class="form-ext-label" for="check1">Remember Me</label>
+
+    <div class="u-pull-right">
+        <a href="#">Forgot Password</a>
+    </div>
+</div>
+
+<div class="form-section u-text-right">
+    <div class="btn-container u-inline-block">
+        <button class="btn-info">
+            Login
+        </button>
+    </div>
+    <div class="btn-container u-inline-block">
+        <button class="btn-light">
+            Cancel
+        </button>
+    </div>
+</div>

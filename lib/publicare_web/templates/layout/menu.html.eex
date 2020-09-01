@@ -1,0 +1,46 @@
+
+<div class="nav-left"></div>
+
+
+<div class="nav-right">
+    <div class="nav-item">
+        <a href="/explore">Explore</a>
+    </div>
+    <div class="nav-item">
+        <a href="/write">Publish</a>
+    </div>
+    <div class="nav-item">
+        <a href="/docs" >Open Access</a>
+    </div>
+    <%= if Guardian.Plug.authenticated?(assigns[:conn], []) do %>
+    <div class="nav-item has-sub toggle-hover">
+        <figure class="avatar img-tiny§" data-text="JD"></figure>
+        <a class="nav-dropdown-link">John Doe</a>
+        <ul class="dropdown-menu dropdown-animated" role="menu">
+            <li role="menu-item">
+                <a href="#">
+                  Profile
+                </a>
+            </li>
+            <li role="menu-item">
+                <a href="#">Settings</a>
+            </li>
+            <li class="dropdown-menu-divider"></li>
+            <li role="menu-item">
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </div>
+    <%= else %>
+    <div class="nav-item">
+      <button class="btn-dark">
+        <a href="/sign/in">Sign in</a>
+      </button>
+    </div>
+    <div class="nav-item">
+      <button class="btn-primary">
+        <a href="/sign/up">Sign up</a>
+      </button>
+    </div>
+    <%= end %>
+</div>

@@ -1,0 +1,24 @@
+$pblr-primary: #05ab98;
+
+#splash-hero {
+  background: url(/images/bg.gif), turquoise;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: luminosity;
+}
+
+.avatar {
+  width: 2em;
+  height: 2em;
+  font-size: 1em;
+}
+
+#header .header-nav {
+  padding: 1rem;
+}
+
+#header .header-nav button {
+  height: 2rem;
+  line-height: 0;
+}

@@ -1,0 +1,38 @@
+<h1>Listing Repositories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Owner</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Website</th>
+      <th>Avatar</th>
+      <th>Default branch</th>
+      <th>Size</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for repository <- @repositories do %>
+    <tr>
+      <td><%= repository.owner %></td>
+      <td><%= repository.name %></td>
+      <td><%= repository.description %></td>
+      <td><%= repository.website %></td>
+      <td><%= repository.avatar %></td>
+      <td><%= repository.default_branch %></td>
+      <td><%= repository.size %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.repository_path(@conn, :show, repository) %></span>
+        <span><%= link "Edit", to: Routes.repository_path(@conn, :edit, repository) %></span>
+        <span><%= link "Delete", to: Routes.repository_path(@conn, :delete, repository), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Repository", to: Routes.repository_path(@conn, :new) %></span>

@@ -1,0 +1,43 @@
+<h1>Show Repository</h1>
+
+<ul>
+
+  <li>
+    <strong>Owner:</strong>
+    <%= @repository.owner %>
+  </li>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @repository.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @repository.description %>
+  </li>
+
+  <li>
+    <strong>Website:</strong>
+    <%= @repository.website %>
+  </li>
+
+  <li>
+    <strong>Avatar:</strong>
+    <%= @repository.avatar %>
+  </li>
+
+  <li>
+    <strong>Default branch:</strong>
+    <%= @repository.default_branch %>
+  </li>
+
+  <li>
+    <strong>Size:</strong>
+    <%= @repository.size %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.repository_path(@conn, :edit, @repository) %></span>
+<span><%= link "Back", to: Routes.repository_path(@conn, :index) %></span>
